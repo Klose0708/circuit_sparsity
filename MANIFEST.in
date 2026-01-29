@@ -1,0 +1,3 @@
+# Include data files if they are moved under the package in the future
+recursive-include circuit_sparsity/data *
+

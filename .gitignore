@@ -1,0 +1,35 @@
+# OS
+.DS_Store
+
+# Python cache/bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test/cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Model artifacts
+final_model.pt

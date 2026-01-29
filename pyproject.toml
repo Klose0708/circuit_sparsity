@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "circuit_sparsity"
+version = "0.1.0"
+description = "Utilities and scripts for CS visualization"
+readme = { text = "CS visualization utilities packaged as a module.", content-type = "text/plain" }
+requires-python = ">=3.10"
+authors = [
+  { name = "circuit_sparsity authors" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "idemlib",
+  "matplotlib",
+  "natsort",
+  "plotly",
+  "pytest",
+  "seaborn",
+  "streamlit",
+  "streamlit-plotly-events",
+  "tiktoken",
+  "torch",
+  "watchdog",
+  "xxhash",
+  "mpi4py",
+  "blobfile",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["circuit_sparsity*"]
+
+[tool.setuptools.package-data]
+circuit_sparsity = ["data/*", "data/**/*"]
